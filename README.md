@@ -18,9 +18,9 @@ Vous pouvez vous renseigner sur comment fonctionne ce selecteur grâce à la doc
 
 ### API publique pour les R.U Dijonnais
 Je vais essayer de maintenir une version fonctionnelle et en ligne de cette API pour les Restaurants Universitaires Mansart, Montmuzard et la caféteria CROUS de l'IUT de Dijon ici :
-[CAFET IUT : https://lucienpuget.fr/api/crous/cafetiut.php](https://lucienpuget.fr/api/crous/cafetiut.php)
-[MANSART : https://lucienpuget.fr/api/crous/cafetiut.php](https://lucienpuget.fr/api/crous/mansart.php)
-[MONTMUZARD : https://lucienpuget.fr/api/crous/montmuzard.php](https://lucienpuget.fr/api/crous/montmuzard.php)
+[CAFET IUT : https://lucienpuget.fr/api/crous/cafetiut.php](https://lucienpuget.fr/api/crous/cafetiut.php)<br/>
+[MANSART : https://lucienpuget.fr/api/crous/cafetiut.php](https://lucienpuget.fr/api/crous/mansart.php)<br/>
+[MONTMUZARD : https://lucienpuget.fr/api/crous/montmuzard.php](https://lucienpuget.fr/api/crous/montmuzard.php)<br/>
 
 ## EN
 ### Usage
@@ -40,6 +40,6 @@ You can get informations about what makes this lign work from the PHP documentat
 
 ### Public API for Dijon (21000, France)
 I will try to maintain online and working an accessible version of this scrapper for the 3 main restaurants of Dijon :
-[CAFET IUT : https://lucienpuget.fr/api/crous/cafetiut.php](https://lucienpuget.fr/api/crous/cafetiut.php)
-[MANSART : https://lucienpuget.fr/api/crous/cafetiut.php](https://lucienpuget.fr/api/crous/mansart.php)
-[MONTMUZARD : https://lucienpuget.fr/api/crous/montmuzard.php](https://lucienpuget.fr/api/crous/montmuzard.php)
+[CAFET IUT : https://lucienpuget.fr/api/crous/cafetiut.php](https://lucienpuget.fr/api/crous/cafetiut.php)<br/>
+[MANSART : https://lucienpuget.fr/api/crous/cafetiut.php](https://lucienpuget.fr/api/crous/mansart.php)<br/>
+[MONTMUZARD : https://lucienpuget.fr/api/crous/montmuzard.php](https://lucienpuget.fr/api/crous/montmuzard.php)<br/>
