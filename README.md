@@ -14,6 +14,7 @@ $bs = $document->getElementById('menu-repas')->childNodes->item(1)->childNodes->
 (qui n'est d'ailleurs pas la même pour les 3 R.U)
 
 En effet, cette ligne de code interprète le code HTML et navigue dedans pour aller chercher les éléments de la liste du menu. Parfois, d'une page à l'autre, la disposition des éléments de la liste du menu changent, il faut alors modifier ce selecteur.
+Vous pouvez vous renseigner sur comment fonctionne ce selecteur grâce à la documentation PHP : [DOM documentation](https://www.php.net/manual/fr/book.dom.php)
 
 ### API publique pour les R.U Dijonnais
 Je vais essayer de maintenir une version fonctionnelle et en ligne de cette API pour les Restaurants Universitaires Mansart, Montmuzard et la caféteria CROUS de l'IUT de Dijon ici :
@@ -35,6 +36,7 @@ $bs = $document->getElementById('menu-repas')->childNodes->item(1)->childNodes->
 (This line is not the same for the 3 restaurants in this repo, you can take a look at it)
 
 Indeed, this lign process the HTML code and navigate in it to get the elements of the menu list. Sometimes, from a CROUS page to another, the disposition of the elements can change, you'll therefore have to modify this lign to adapt it.
+You can get informations about what makes this lign work from the PHP documentation : [DOM documentation](https://www.php.net/manual/fr/book.dom.php)
 
 ### Public API for Dijon (21000, France)
 I will try to maintain online and working an accessible version of this scrapper for the 3 main restaurants of Dijon :
