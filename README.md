@@ -17,8 +17,8 @@ En effet, cette ligne de code interprète le code HTML et navigue dedans pour al
 Vous pouvez vous renseigner sur comment fonctionne ce selecteur grâce à la documentation PHP : [DOM documentation](https://www.php.net/manual/fr/book.dom.php)
 
 ### API publique pour les R.U Dijonnais
-Je vais essayer de maintenir une version fonctionnelle et en ligne de cette API pour les Restaurants Universitaires Mansart, Montmuzard et la caféteria CROUS de l'IUT de Dijon ici :
-[CAFET IUT : https://lucienpuget.fr/api/crous/cafetiut.php](https://lucienpuget.fr/api/crous/cafetiut.php)<br/>
+Je vais essayer de maintenir une version fonctionnelle et en ligne de cette API pour les Restaurants Universitaires Mansart, Montmuzard et la caféteria CROUS de l'IUT de Dijon ici :<br/>
+[CAFET IUT : https://lucienpuget.fr/api/crous/cafetiut.php](https://lucienpuget.fr/api/crous/cafetiut.php)
 [MANSART : https://lucienpuget.fr/api/crous/cafetiut.php](https://lucienpuget.fr/api/crous/mansart.php)<br/>
 [MONTMUZARD : https://lucienpuget.fr/api/crous/montmuzard.php](https://lucienpuget.fr/api/crous/montmuzard.php)<br/>
 
@@ -39,7 +39,7 @@ Indeed, this lign process the HTML code and navigate in it to get the elements o
 You can get informations about what makes this lign work from the PHP documentation : [DOM documentation](https://www.php.net/manual/fr/book.dom.php)
 
 ### Public API for Dijon (21000, France)
-I will try to maintain online and working an accessible version of this scrapper for the 3 main restaurants of Dijon :
+I will try to maintain online and working an accessible version of this scrapper for the 3 main restaurants of Dijon :<br/>
 [CAFET IUT : https://lucienpuget.fr/api/crous/cafetiut.php](https://lucienpuget.fr/api/crous/cafetiut.php)<br/>
 [MANSART : https://lucienpuget.fr/api/crous/cafetiut.php](https://lucienpuget.fr/api/crous/mansart.php)<br/>
 [MONTMUZARD : https://lucienpuget.fr/api/crous/montmuzard.php](https://lucienpuget.fr/api/crous/montmuzard.php)<br/>

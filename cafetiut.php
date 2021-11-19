@@ -11,14 +11,12 @@ $matches[0][0] = substr($matches[0][0],0,-20);
 $document = new DOMDocument();
 $document->loadHtml('<html><body><div><div>'.$matches[0][0].'</body></html>');
 // getting today menu infos
-$bs = $document->getElementById('menu-repas')->childNodes->item(1)->getElementsByTagName('li');
+$bs = $document->getElementById('menu-repas')->childNodes->item(1)->childNodes->item(0)->getElementsByTagName('li');
 // listing every meals
 $meals = "";
 $i=0;
 foreach($bs as $item){
-     if($i!=0){
-          $meals= $meals.utf8_decode($item->nodeValue)."|"; // separator for sending every meals into one field onto the API
-     }
+     $meals= $meals.utf8_decode($item->nodeValue)."|"; // separator for sending every meals into one field onto the API
      $i++;
 }
 
