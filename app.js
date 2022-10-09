@@ -2,6 +2,7 @@ const express = require('express');
 const axios = require("axios");
 const cheerio = require("cheerio");
 const pretty = require("pretty");
+const path = require('path');
 
 const app = express();
 const port = 8056;
@@ -17,8 +18,12 @@ app.get('/',(req,res) => {
 
     const restos = {
         "cafet_iut": "https://www.crous-bfc.fr/restaurant/cafet-iut/",
+        "cafet_mansart": "https://www.crous-bfc.fr/restaurant/cafet-mansart/",
+        "cafet_des_sports": "https://www.crous-bfc.fr/restaurant/cafet-des-sports/",
+        "cafet_droit_lettres": "https://www.crous-bfc.fr/restaurant/cafet-droit-lettres/",
         "mansart": "https://www.crous-bfc.fr/restaurant/resto-u-mansart/",
-        "montmuzard": "https://www.crous-bfc.fr/restaurant/resto-u-montmuzard/"
+        "montmuzard": "https://www.crous-bfc.fr/restaurant/resto-u-montmuzard/",
+        "crousty_truck": "https://www.crous-bfc.fr/restaurant/crousty-truck/"
     }
 
     cafetiut = axios.get(restos[resto]).then(function(data){
@@ -46,11 +51,15 @@ app.get('/',(req,res) => {
         const diner = $(today_menu).find('.content.clearfix > div:nth-child(3) > .content-repas').html();
 
         res.status(200);
-        res.send(JSON.stringify({"resto":resto,"title":"Menu du "+date, "ptidej":ptidej, "dej":dej, "diner":diner}));
+        res.send(JSON.stringify({"resto":resto,"title":"Menu du "+date, "ptidej":ptidej, "dej":dej, "diner":diner, "url":restos[resto]}));
     }).catch(reason => {
         console.log(reason);
     });
 });
+
+app.get('/map.jpg', function (req, res){
+    res.sendFile(path.resolve(__dirname, './map.jpg'));
+})
 
 app.listen(port,"127.0.0.1", ()=>{
     console.log('server started');
