@@ -2,9 +2,13 @@
 Get informations from CROUS restaurants pages and turn them into an API<br/>
 Uses **NodeJs** *(instead of the previous version that used PHP)*
 
+Add my Discord BOT into your server ! [Click here](https://discord.com/api/oauth2/authorize?client_id=903576717728296980&permissions=2147575808&scope=bot)
+
 ## FR
 ### Utilisation
 Le scrapper est codé pour fonctionner sur les 3 principaux Restaurants Universitaires de Dijon. Chaque page CROUS peut potentiellement être construite différemment, à vous d'adapter le scrapper à vos restaurants dans le cas où il ne fonctionnerait pas nativement.
+
+J'ai également dévellopé un bot discord afin d'obtenir le menu du jour des différents R.U et cafet's de Dijon, ajoute le à ton serveur [ici](https://discord.com/api/oauth2/authorize?client_id=903576717728296980&permissions=2147575808&scope=bot)
 
 ### Principale variable d'ajustement pour adapter mon scrapper à votre Resto U
 l'élément principal à adapter selon les résultats obtenus avec mon code est cette ligne :
