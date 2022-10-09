@@ -30,7 +30,7 @@ En effet, cette ligne de code interprète le code HTML et navigue dedans pour al
 
 ### API publique pour les R.U Dijonnais
 Je vais essayer de maintenir une version fonctionnelle et en ligne de cette API pour les Restaurants Universitaires Mansart, Montmuzard et la caféteria CROUS de l'IUT de Dijon ici :<br/>
-[CAFET IUT : http://crous.lucienpuget.fr/?resto=cafet_iut](http://crous.lucienpuget.fr/?resto=cafet_iut)
+[CAFET IUT : http://crous.lucienpuget.fr/?resto=cafet_iut](http://crous.lucienpuget.fr/?resto=cafet_iut)<br />
 [MANSART : http://crous.lucienpuget.fr/?resto=mansart](http://crous.lucienpuget.fr/?resto=mansart)<br/>
 [MONTMUZARD : http://crous.lucienpuget.fr/?resto=montmuzard](http://crous.lucienpuget.fr/?resto=montmuzard)<br/>
 
@@ -61,6 +61,6 @@ Indeed, these lignes process the HTML code and navigate into it to get the eleme
 
 ### Public API for Dijon (21000, France)
 I will try to maintain online and working an accessible version of this scrapper for the 3 main restaurants of Dijon :<br/>
-[CAFET IUT : http://crous.lucienpuget.fr/?resto=cafet_iut](http://crous.lucienpuget.fr/?resto=cafet_iut)
+[CAFET IUT : http://crous.lucienpuget.fr/?resto=cafet_iut](http://crous.lucienpuget.fr/?resto=cafet_iut)<br />
 [MANSART : http://crous.lucienpuget.fr/?resto=mansart](http://crous.lucienpuget.fr/?resto=mansart)<br/>
 [MONTMUZARD : http://crous.lucienpuget.fr/?resto=montmuzard](http://crous.lucienpuget.fr/?resto=montmuzard)<br/>
