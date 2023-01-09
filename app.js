@@ -17,13 +17,13 @@ app.get('/',(req,res) => {
 
 
     const restos = {
-        "cafet_iut": "https://www.crous-bfc.fr/restaurant/cafet-iut/",
-        "cafet_mansart": "https://www.crous-bfc.fr/restaurant/cafet-mansart/",
-        "cafet_des_sports": "https://www.crous-bfc.fr/restaurant/cafet-des-sports/",
-        "cafet_droit_lettres": "https://www.crous-bfc.fr/restaurant/cafet-droit-lettres/",
-        "mansart": "https://www.crous-bfc.fr/restaurant/resto-u-mansart/",
-        "montmuzard": "https://www.crous-bfc.fr/restaurant/resto-u-montmuzard/",
-        "crousty_truck": "https://www.crous-bfc.fr/restaurant/crousty-truck/"
+        "cafet_iut": "https://www.crous-bfc.fr/restaurant/cafet-iut-2/",
+        "cafet_mansart": "https://www.crous-bfc.fr/restaurant/cafet-mansart-2/",
+        "cafet_des_sports": "https://www.crous-bfc.fr/restaurant/cafet-des-sports-2/",
+        "cafet_droit_lettres": "https://www.crous-bfc.fr/restaurant/cafet-droit-lettres-2/",
+        "mansart": "https://www.crous-bfc.fr/restaurant/resto-u-mansart-2/",
+        "montmuzard": "https://www.crous-bfc.fr/restaurant/resto-u-montmuzard-2/",
+        "crousty_truck": "https://www.crous-bfc.fr/restaurant/crousty-truck-2/"
     }
 
     cafetiut = axios.get(restos[resto]).then(function(data){
@@ -34,9 +34,11 @@ app.get('/',(req,res) => {
         const now = new Date();
         const date = jours[now.getUTCDay()]+" "+now.getDate()+" "+mois[now.getMonth()];
         let today_index = null;
+        let ptidej = "Non renseigné";
+        let dej = "Non renseigné";
+        let diner = "Non renseigné";
 
-
-        $('#menu-repas .slides h3').each(function(index){
+        $('.menu .menu_date_title').each(function(index){
             datemenu = $(this).html();
 
             if(datemenu.replace('û','u').includes("Menu du "+date)){
@@ -44,11 +46,21 @@ app.get('/',(req,res) => {
             }
         });
 
-        const today_menu = $('#menu-repas .slides > li:nth-child('+(today_index+1)+')');
 
-        const ptidej = $(today_menu).find('.content.clearfix > div:nth-child(1) > .content-repas').html();
-        const dej = $(today_menu).find('.content.clearfix > div:nth-child(2) > .content-repas').html();
-        const diner = $(today_menu).find('.content.clearfix > div:nth-child(3) > .content-repas').html();
+        const today_menu = $('.menu:nth-child('+(today_index+1)+')');
+        $(today_menu).find('.meal').each(function (index){
+           var title  = $(this).find('.meal_title').text();
+           if(title=="Déjeuner"){
+               dej = $(this).find('.meal_foodies').html();
+           }
+            if(title=="Petit-déjeuner"){
+                ptidej = $(this).find('.meal_foodies').html();
+            }
+            if(title=="Dîner"){
+                diner = $(this).find('.meal_foodies').html();
+            }
+        });
+
 
         res.status(200);
         res.send(JSON.stringify({"resto":resto,"title":"Menu du "+date, "ptidej":ptidej, "dej":dej, "diner":diner, "url":restos[resto]}));
